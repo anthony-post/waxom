@@ -1,0 +1,270 @@
+/*@font-face {
+    font-family: 'Arial MT';
+    src: url('fonts/arialmt/ARIALMT.ttf');
+}*/
+
+*{
+    box-sizing: border-box;
+}
+
+*::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: "Arial MT";*/
+}
+
+.container {
+	max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header {
+	height: 1024px;
+	background-image: url(../img/photo_bg.jpg);
+	background-color: #474540;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	padding: 40px 0;
+	position: relative;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__list__item {
+	list-style-type: none;
+	padding: 0 30px 0 0;
+}
+
+.menu__list__item:nth-child(9) {
+	padding-left: 60px;
+}
+
+.menu__list--link {
+	/* Style for "Home" */
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+	text-align: left;
+	/* Text style for "H, ome" */
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+
+	text-decoration: none;
+}
+
+.slider__text {
+	padding-top: 280px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.slider__text-item1 {
+	/* Style for "Unique and" */
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 36px;
+	font-weight: 500;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+	text-align: center;
+	/* Text style for "Unique and" */
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+
+	margin: 0;
+	flex-basis: 100%;
+}
+
+.slider__text-title {
+	/* Style for "Portfolio" */
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 52px;
+	font-weight: 800;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+	text-align: center;
+	/* Text style for "Portfolio" */
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+
+	margin: 0;
+	padding: 14px 0 19px 0;
+	flex-basis: 100%;
+}
+
+.slider__text-item2 {
+	/* Style for "Nam liber" */
+	color: #ffffff;
+	font-family: Montserrat;
+	font-size: 16px;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: 24px;
+	text-align: center;
+	/* Text style for "Nam liber" */
+	font-style: normal;
+	letter-spacing: normal;
+	line-height: normal;
+
+	margin: 0;
+	flex-basis: 100%;
+}
+
+.button {
+	/* Style for "button" */
+	/*width: 170px;
+	height: 53px;*/
+	box-shadow: inset 0 -3px 0 #736357;
+	border-radius: 3px;
+	background-color: #998675;
+
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 53px;
+	padding: 0 37px 0 37px;
+	margin: 52px 0 0 0;
+	
+	/* Style for "Get Starte" */
+	/*width: 94px;
+	height: 11px;*/
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 800;
+	/*font-style: normal;*/
+	letter-spacing: normal;
+	/*line-height: 23px;*/
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 42px;
+    left: 50%;
+    margin: 0 0 0 -90px;
+}
+
+.circle {
+	width: 11px;
+	height: 11px;
+	background-color: #ffffff;
+	opacity: 0.5;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.circle-active {
+	width: 15px;
+	height: 15px;
+	border: 2px solid #d3c1ad;
+}
+
+.circle:hover {
+    background-color: #212121;
+}
+
+/*SERVICES*/
+
+.services {
+	padding: 80px 0 80px 0;
+}	
+
+
+.services__list {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.services__list__item {
+	flex-basis: 20%;
+	text-align: center;
+}
+
+.services__list__item-text {
+	padding: 0 0 20px 0;
+}
+
+.services__list__item::after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	/* Style for "line" */
+	width: 70px;
+	height: 3px;
+	background-color: #f1eee9;
+}
+
+/*YOUR IDEAS*/
+
+.your__ideas {
+	background-color: #fbfaf8;
+	padding: 83px 0 0 0;
+}
+
+.your__ideas__title {
+	text-align: center;
+}
+
+.your__ideas__text {
+	text-align: center;
+}
+
+.your__ideas__pic {
+
+}
+
+/*PURCHASE NOW*/
+
+.purchase__now {
+	background-color: #f4f5f8;
+	background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+	padding: 50px 25px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.purchase__now__title {
+	margin: 0;
+	color: #ffffff;
+}
+
+.purchase__now__text {
+	margin: 0;
+	padding: 8px 0 0 0;
+	color: #615855;
+}
+
+.purchase__now__button {
+	margin: 0;
+	min-height: 50px;
+}
