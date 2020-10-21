@@ -1,8 +1,116 @@
+@font-face {
+    font-family: 'Montserrat';
+    src:
+    	local('Montserrat'),  
+    	url('../fonts/Montserrat/montserrat-thin-webfont.woff2') format('woff2'),
+        url('../fonts/Montserrat/montserrat-thin-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src:
+    	local('Montserrat'), 
+    	url('../fonts/Montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+        url('../fonts/Montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat - Ultra Light';
+    src:
+    	local('Montserrat - Ultra Light'), 
+    	url('../fonts/Montserrat/montserrat-extralight-webfont.woff2') format('woff2'),
+        url('../fonts/Montserrat/montserrat-extralight-webfont.woff') format('woff');
+    font-weight: 400l;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+       url('../fonts/Raleway/Raleway-Bold.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+       url('../fonts/Raleway/Raleway-Medium.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway - Extra Bold';
+  src: local('Raleway - Extra Bold'),
+       url('../fonts/Raleway/Raleway-ExtraBold.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-ExtraBold.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway - Semi Bold';
+  src: local('Raleway - Semi Bold'),
+       url('../fonts/Raleway/Raleway-SemiBold.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-SemiBold.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*@font-face {
-    font-family: 'Arial MT';
-    src: url('fonts/arialmt/ARIALMT.ttf');
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 500;
+src: local('Awesome Font'),
+url('/fonts/awesome.woff2') format('woff2'),
+url('/fonts/awesome.woff') format('woff'),
+url('/fonts/awesome.ttf') format('ttf'),
+url('/fonts/awesome.eot') format('eot');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+
+@font-face {
+	font-family: "Raleway - Extra Bold";
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Raleway - Semi Bold";
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'montserrat';
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Montserrat - Ultra Light";
+	font-style: normal;
+	font-weight: 400;
 }*/
 
+/*
 *{
     box-sizing: border-box;
 }
@@ -10,7 +118,7 @@
 *::before, ::after {
     box-sizing: border-box;
 }
-
+*/
 body {
     /*font-family: "Arial MT";*/
 }
@@ -21,7 +129,7 @@ body {
 }
 
 .header {
-	height: 1024px;
+	min-height: 1024px;
 	background-image: url(../img/photo_bg.jpg);
 	background-color: #474540;
 	background-size: cover;
@@ -41,31 +149,47 @@ body {
 	display: flex;
 }
 
-.menu__list__item {
+.menu__list-item {
 	list-style-type: none;
 	padding: 0 30px 0 0;
 }
 
-.menu__list__item:nth-child(9) {
+.menu__list-item:nth-child(9) {
 	padding-left: 60px;
 }
 
-.menu__list--link {
+.menu__list-link {
 	/* Style for "Home" */
 	color: #ffffff;
-	font-family: Montserrat;
+	font-family: 'montserrat';
 	font-size: 14px;
 	font-weight: 300;
 	font-style: normal;
 	letter-spacing: normal;
 	line-height: normal;
 	text-align: left;
-	/* Text style for "H, ome" */
-	font-style: normal;
-	letter-spacing: normal;
-	line-height: normal;
 
 	text-decoration: none;
+}
+
+.menu__list-link:hover,
+.menu__list-link:focus {
+	color: #c7b299;
+}
+
+.icon-cart, 
+.icon-search {
+	fill: #ffffff;
+}
+
+.icon-cart:hover, 
+.icon-search:hover {
+	fill: #c7b299;
+}
+
+.icon-cart:focus, 
+.icon-search:focus {
+	fill: #c7b299;
 }
 
 .slider__text {
@@ -76,7 +200,7 @@ body {
 	justify-content: center;
 }
 
-.slider__text-item1 {
+.slider__text-item-1 {
 	/* Style for "Unique and" */
 	color: #ffffff;
 	font-family: Raleway;
@@ -115,10 +239,10 @@ body {
 	flex-basis: 100%;
 }
 
-.slider__text-item2 {
+.slider__text-item-2 {
 	/* Style for "Nam liber" */
 	color: #ffffff;
-	font-family: Montserrat;
+	font-family: 'montserrat';
 	font-size: 16px;
 	font-weight: 300;
 	font-style: normal;
@@ -146,7 +270,7 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 53px;
-	padding: 0 37px 0 37px;
+	padding: 0 37px;
 	margin: 52px 0 0 0;
 	
 	/* Style for "Get Starte" */
@@ -163,11 +287,16 @@ body {
 	text-transform: uppercase;
 }
 
+.button:hover,
+.button:focus {
+	opacity: 0.7;
+}
+
 .pagination {
     position: absolute;
     bottom: 42px;
     left: 50%;
-    margin: 0 0 0 -90px;
+    margin: 0 0 0 -65px;
 }
 
 .circle {
@@ -177,18 +306,17 @@ body {
 	opacity: 0.5;
     display: inline-block;
     vertical-align: middle;
-    border-radius: 50%;
-    margin: 10px;
 }
-
+/*
+.circle:hover,
+.circle:focus {
+    background-color: #212121;
+}
+*/
 .circle-active {
 	width: 15px;
 	height: 15px;
 	border: 2px solid #d3c1ad;
-}
-
-.circle:hover {
-    background-color: #212121;
 }
 
 /*SERVICES*/
@@ -197,7 +325,6 @@ body {
 	padding: 80px 0 80px 0;
 }	
 
-
 .services__list {
 	list-style-type: none;
 	display: flex;
@@ -205,16 +332,30 @@ body {
 	justify-content: center;
 }
 
-.services__list__item {
-	flex-basis: 20%;
+.services__item {
+	width: 20%;
 	text-align: center;
 }
 
-.services__list__item-text {
+.services__item-icon {
+	fill: #555555;
+}
+
+.services__item:hover .services__item-icon,
+.services__item:focus .services__item-icon {
+	fill: #c7b299;
+}
+
+.services__item:hover .services__item-title,
+.services__item:focus .services__item-title {
+	color: #c7b299;
+}
+
+.services__item-text {
 	padding: 0 0 20px 0;
 }
 
-.services__list__item::after {
+.services__item::after {
 	content: "";
 	display: block;
 	margin: 0 auto;
@@ -224,28 +365,53 @@ body {
 	background-color: #f1eee9;
 }
 
+.services__item:hover::after {
+	background-color: #c7b299;
+}
+
 /*YOUR IDEAS*/
 
-.your__ideas {
+.ideas {
 	background-color: #fbfaf8;
 	padding: 83px 0 0 0;
 }
 
-.your__ideas__title {
+.ideas__title {
 	text-align: center;
 }
 
-.your__ideas__text {
+.ideas__text {
 	text-align: center;
 }
 
-.your__ideas__pic {
+.ideas__screens {
+	padding: 40px 340px 0 340px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: relative;
+}
 
+.ideas__pic:first-child {
+	position: absolute;
+	left: 70px;
+	z-index: 1;
+}
+
+.ideas__pic:nth-child(2) {
+	margin: 0 auto;
+	z-index: 2;
+}
+
+.ideas__pic:last-child {
+	position: absolute;
+	right: 70px;
+	z-index: 1;
 }
 
 /*PURCHASE NOW*/
 
-.purchase__now {
+.purchase {
 	background-color: #f4f5f8;
 	background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
 	padding: 50px 25px;
@@ -253,18 +419,192 @@ body {
 	justify-content: space-between;
 }
 
-.purchase__now__title {
+.purchase__title {
 	margin: 0;
 	color: #ffffff;
 }
 
-.purchase__now__text {
+.purchase__text {
 	margin: 0;
 	padding: 8px 0 0 0;
 	color: #615855;
 }
 
-.purchase__now__button {
+.purchase__button {
 	margin: 0;
 	min-height: 50px;
+}
+
+/*OUR LATEST PROJECTS*/
+
+.projects {
+	padding: 80px 0;
+}
+
+.projects__title {
+	text-align: center;
+}
+
+.projects__text {
+	text-align: center;
+}
+
+.projects__list-buttons {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+.projects__list-photos {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.projects__link {
+	
+}
+
+/*VIDEO*/
+
+.video {
+	position: relative;
+}
+
+.video__file {
+  width: 100%;
+  object-fit: cover;
+}
+
+.video__cover {
+	position: absolute;
+	top: 30%;
+  	left: 20%;
+}
+
+.video__cover-button {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.video__cover-title {
+	text-align: center;
+}
+
+.video__cover-text {
+	text-align: center;
+}
+
+.video__cover-time {
+	text-align: center;
+}
+
+/*MOBILE FEATURES*/
+
+.mobile-features {
+	min-height: 695px;
+	background-image: url(../img/phone_bg.jpg);
+	background-color: #ffffff;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+
+	padding: 0 10% 0 0;
+}
+
+.mobile-features__title {
+	width: 40%;
+}
+
+.mobile-features__text {
+	width: 40%;
+}
+
+.mobile-features__list {
+	width: 40%;
+}
+
+/*NUMBERS*/
+
+.numbers {
+	padding: 69px 0 60px 0;
+	background-color: #f4f5f8;
+	background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.numbers__list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.numbers__item {
+	text-align: center;
+}
+
+.numbers__item::after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	/* Style for "lines" */
+	width: 30px;
+	height: 2px;
+	background-color: #ffffff;
+}	
+
+.numbers__item-icon {
+	fill: #c7b299;
+}
+
+/*POSTS*/
+
+.posts {
+	padding: 80px 0;
+}
+
+.posts__title {
+	text-align: center;
+}
+
+.posts__text {
+	text-align: center;
+}
+
+.posts__list {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+.posts__button {
+
+}
+
+/*PARTNERS*/
+
+.partners {
+	background-image: url(../img/mounts_bg.jpg);
+	background-color: #2c2f34;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.partners__list {
+	min-height: 489px;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+}
+
+.partners__item {
+
 }
