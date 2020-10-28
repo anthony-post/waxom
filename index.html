@@ -10,7 +10,9 @@
 	<header class="container">
 		<div class="header">
 			<nav class="navigation">
-				<a href="#"><img src="img/logo_text.png" alt="logo"></a>
+				<a href="#" class="logo__link"><img src="img/logo_text.png" alt="logo"></a>
+				<label for="menu__mobile"></label>
+				<input type="checkbox" id="menu__mobile">
 				<ul class="menu__list">
 					<li class="menu__list-item"><a href="#" class="menu__list-link">Home</a></li>
 					<li class="menu__list-item"><a href="#" class="menu__list-link">About Us</a></li>
@@ -20,14 +22,16 @@
 					<li class="menu__list-item"><a href="#" class="menu__list-link">Pricing</a></li>
 					<li class="menu__list-item"><a href="#" class="menu__list-link">Shortcodes</a></li>
 					<li class="menu__list-item"><a href="#" class="menu__list-link">Contacts</a></li>
-					<li class="menu__list-item">
-						<a href="#" class="menu__list-link">
+				</ul>
+				<ul class="menu2__list">
+					<li class="menu2__list-item">
+						<a href="#" class="menu2__list-link">
 							<svg width="20px" height="27px"  viewBox="0 0 20 27" class="icon-cart"> <path fill-rule="evenodd" d="M15.995483,4.9985275 C15.995483,4.9985275 14.496216,4.9985275 14.496216,4.9985275 C14.496216,3.3417358 12.483032,1.998188 9.998779,1.998188 C7.5144043,1.998188 5.5009766,3.3417358 5.5009766,4.9985275 C5.5009766,4.9985275 4.001831,4.9985275 4.001831,4.9985275 C2.3458252,4.9985275 1.0032959,6.3412437 1.0032959,7.997204 C1.0032959,7.997204 1.0032959,22.995163 1.0032959,22.995163 C1.0032959,24.651123 2.3458252,25.994255 4.001831,25.994255 C4.001831,25.994255 15.995483,25.994255 15.995483,25.994255 C17.651611,25.994255 18.994263,24.651123 18.994263,22.995163 C18.994263,22.995163 18.994263,7.997204 18.994263,7.997204 C18.994263,6.3412437 17.651611,4.9985275 15.995483,4.9985275 ZM9.998779,3.4983559 C11.655029,3.4983559 12.99707,3.96241 12.99707,4.9985275 C12.99707,4.9985275 7.000244,4.9985275 7.000244,4.9985275 C7.000244,3.96241 8.342651,3.4983559 9.998779,3.4983559 ZM17.494995,22.995163 C17.494995,23.823143 16.823486,24.494087 15.995483,24.494087 C15.995483,24.494087 4.001831,24.494087 4.001831,24.494087 C3.173584,24.494087 2.5024414,23.823143 2.5024414,22.995163 C2.5024414,22.995163 2.5024414,21.495407 2.5024414,21.495407 C2.5024414,21.495407 17.494995,21.495407 17.494995,21.495407 C17.494995,21.495407 17.494995,22.995163 17.494995,22.995163 ZM17.494995,19.99524 C17.494995,19.99524 2.5024414,19.99524 2.5024414,19.99524 C2.5024414,19.99524 2.5024414,7.997204 2.5024414,7.997204 C2.5024414,7.168808 3.173584,6.497452 4.001831,6.497452 C4.001831,6.497452 5.5009766,6.497452 5.5009766,6.497452 C5.5009766,6.497452 5.5009766,10.997543 5.5009766,10.997543 C5.5009766,10.997543 7.000244,10.997543 7.000244,10.997543 C7.000244,10.997543 7.000244,6.497452 7.000244,6.497452 C7.000244,6.497452 12.99707,6.497452 12.99707,6.497452 C12.99707,6.497452 12.99707,10.997543 12.99707,10.997543 C12.99707,10.997543 14.496216,10.997543 14.496216,10.997543 C14.496216,10.997543 14.496216,6.497452 14.496216,6.497452 C14.496216,6.497452 15.995483,6.497452 15.995483,6.497452 C16.823975,6.497452 17.494995,7.168808 17.494995,7.997204 C17.494995,7.997204 17.494995,19.99524 17.494995,19.99524 Z"/>
 							</svg>
 						</a>
 					</li>
-					<li class="menu__list-item">
-						<a href="#" class="menu__list-link">
+					<li class="menu2__list-item">
+						<a href="#" class="menu2__list-link">
 							<!--<img src="img/icon-search.svg" alt="search" height="24">-->
 							<svg width="24" height="24" viewBox="0 0 24 24" class="icon-search"><path d="M23.761 23.763a.785.785 0 0 1-1.098 0l-6.217-6.12a10.155 10.155 0 0 1-6.353 2.22C4.52 19.862.001 15.415.001 9.928 0 4.443 4.519-.002 10.093-.002c5.575 0 10.093 4.445 10.094 9.93 0 2.565-.997 4.897-2.618 6.658l6.193 6.095a.758.758 0 0 1 0 1.082zM18.633 9.93c0-4.641-3.823-8.404-8.54-8.404-4.716 0-8.54 3.763-8.54 8.404 0 4.643 3.824 8.405 8.54 8.405 4.717 0 8.54-3.762 8.54-8.405z"/></svg>
 						</a>
@@ -63,6 +67,7 @@
 	</header>
 	<main class="container">
 		<section class="services">
+			<h2 class="visually-hidden">Services</h2> 
 			<ul class="services__list">
 				<li class="services__item">
 					<!--<img src="img/icon1.png" alt="icon1" height="49">-->
@@ -105,7 +110,7 @@
 		</section>
 		<aside class="purchase">
 			<div>
-				<h1 class="purchase__title"><span class="purchase__title-color">Waxom</span> Multipurpose WordPress Theme</h1>
+				<h2 class="purchase__title"><span class="purchase__title-color">Waxom</span> Multipurpose WordPress Theme</h2>
 				<p class="purchase__text">Don't Forget to Rate the Template. Thanks so much!</p>
 			</div>
 			<a href="#" class="purchase__button">Purchase Now</a>
@@ -127,8 +132,12 @@
 						<h3 class="projects__item-card-title">Claritas Etiam Processus</h3>
 						<p class="projects__item-card-text">Photography, Nature</p>
 					</div>
-					<a href="#" class="projects__item-card-link"></a>
-					<a href="#" class="projects__item-card-search"></a>
+					<a href="#">
+						<svg width="26" height="26" viewBox="0 0 26 26" class="projects__item-card-link"><path d="M23.5 11.242l-1.927 1.928-3.187 3.189c-.153.17-.34.324-.511.46a6.24 6.24 0 0 1-6.153.905 6.038 6.038 0 0 1-2.08-1.365l2.642-2.644a2.446 2.446 0 0 0 3.46 0l2.028-2.029L20.857 8.6a2.447 2.447 0 1 0-3.46-3.462l-2.454 2.456a7.068 7.068 0 0 0-4.908-.376l4.72-4.723c2.404-2.405 6.341-2.405 8.744 0 2.42 2.42 2.42 6.343 0 8.748zm-7.654 7.607l-4.618 4.672c-2.403 2.406-6.34 2.406-8.744 0-2.403-2.404-2.403-6.343 0-8.747l5.113-5.118c.068-.067.154-.153.239-.221a6.191 6.191 0 0 1 6.426-1.142c.75.29 1.465.75 2.079 1.363l-2.642 2.645a2.446 2.446 0 0 0-3.46 0l-5.113 5.115a2.447 2.447 0 1 0 3.46 3.463l2.352-2.355c2.011.803 2.557.87 4.908.325z"/></svg>
+					</a>
+					<a href="#">
+						<svg width="26" height="25" viewBox="0 0 26 25" class="projects__item-card-search"><path d="M17.417 7.847c.318.644.047 1.42-.607 1.734-.185.087-.381.13-.576.13-.487 0-.954-.267-1.182-.728a4.147 4.147 0 0 0-3.748-2.31c-.726 0-1.315-.579-1.315-1.296 0-.714.589-1.295 1.315-1.295 2.62 0 4.964 1.443 6.113 3.765zm8.04 16.325a1.647 1.647 0 0 1-1.164.474 1.65 1.65 0 0 1-1.163-.474L18.795 19.9a11.218 11.218 0 0 1-6.836 2.317C5.793 22.218.777 17.276.777 11.202S5.793.186 11.96.186 23.14 5.128 23.14 11.202c0 2.37-.77 4.562-2.068 6.361l4.383 4.318a1.602 1.602 0 0 1 0 2.29zM11.96 19.627c2.104 0 4.03-.756 5.521-2.003.46-.384.874-.819 1.243-1.288a8.288 8.288 0 0 0 1.786-5.134c0-4.645-3.836-8.424-8.55-8.424-4.715 0-8.551 3.78-8.551 8.424 0 4.645 3.836 8.424 8.55 8.425z"/></svg>
+					</a>
 				</li>
 				<li class="projects__item-card">
 					<img src="img/photo2.jpg" alt="pic2" height="237" class="projects__item-card-pic">
@@ -136,8 +145,12 @@
 						<h3 class="projects__item-card-title">Quam Nutamus Farum</h3>
 						<p class="projects__item-card-text">Graphic Design, Mock-Up</p>
 					</div>
-					<a href="#" class="projects__item-card-link"></a>
-					<a href="#" class="projects__item-card-search"></a>
+					<a href="#">
+						<svg width="26" height="26" viewBox="0 0 26 26" class="projects__item-card-link"><path d="M23.5 11.242l-1.927 1.928-3.187 3.189c-.153.17-.34.324-.511.46a6.24 6.24 0 0 1-6.153.905 6.038 6.038 0 0 1-2.08-1.365l2.642-2.644a2.446 2.446 0 0 0 3.46 0l2.028-2.029L20.857 8.6a2.447 2.447 0 1 0-3.46-3.462l-2.454 2.456a7.068 7.068 0 0 0-4.908-.376l4.72-4.723c2.404-2.405 6.341-2.405 8.744 0 2.42 2.42 2.42 6.343 0 8.748zm-7.654 7.607l-4.618 4.672c-2.403 2.406-6.34 2.406-8.744 0-2.403-2.404-2.403-6.343 0-8.747l5.113-5.118c.068-.067.154-.153.239-.221a6.191 6.191 0 0 1 6.426-1.142c.75.29 1.465.75 2.079 1.363l-2.642 2.645a2.446 2.446 0 0 0-3.46 0l-5.113 5.115a2.447 2.447 0 1 0 3.46 3.463l2.352-2.355c2.011.803 2.557.87 4.908.325z"/></svg>
+					</a>
+					<a href="#">
+						<svg width="26" height="25" viewBox="0 0 26 25" class="projects__item-card-search"><path d="M17.417 7.847c.318.644.047 1.42-.607 1.734-.185.087-.381.13-.576.13-.487 0-.954-.267-1.182-.728a4.147 4.147 0 0 0-3.748-2.31c-.726 0-1.315-.579-1.315-1.296 0-.714.589-1.295 1.315-1.295 2.62 0 4.964 1.443 6.113 3.765zm8.04 16.325a1.647 1.647 0 0 1-1.164.474 1.65 1.65 0 0 1-1.163-.474L18.795 19.9a11.218 11.218 0 0 1-6.836 2.317C5.793 22.218.777 17.276.777 11.202S5.793.186 11.96.186 23.14 5.128 23.14 11.202c0 2.37-.77 4.562-2.068 6.361l4.383 4.318a1.602 1.602 0 0 1 0 2.29zM11.96 19.627c2.104 0 4.03-.756 5.521-2.003.46-.384.874-.819 1.243-1.288a8.288 8.288 0 0 0 1.786-5.134c0-4.645-3.836-8.424-8.55-8.424-4.715 0-8.551 3.78-8.551 8.424 0 4.645 3.836 8.424 8.55 8.425z"/></svg>
+					</a>
 				</li>
 				<li class="projects__item-card">
 					<img src="img/photo3.jpg" alt="pic3" height="237" class="projects__item-card-pic">
@@ -145,8 +158,12 @@
 						<h3 class="projects__item-card-title">Usus Legentis Videntur</h3>
 						<p class="projects__item-card-text">Photography, Holiday</p>
 					</div>
-					<a href="#" class="projects__item-card-link"></a>
-					<a href="#" class="projects__item-card-search"></a>
+					<a href="#">
+						<svg width="26" height="26" viewBox="0 0 26 26" class="projects__item-card-link"><path d="M23.5 11.242l-1.927 1.928-3.187 3.189c-.153.17-.34.324-.511.46a6.24 6.24 0 0 1-6.153.905 6.038 6.038 0 0 1-2.08-1.365l2.642-2.644a2.446 2.446 0 0 0 3.46 0l2.028-2.029L20.857 8.6a2.447 2.447 0 1 0-3.46-3.462l-2.454 2.456a7.068 7.068 0 0 0-4.908-.376l4.72-4.723c2.404-2.405 6.341-2.405 8.744 0 2.42 2.42 2.42 6.343 0 8.748zm-7.654 7.607l-4.618 4.672c-2.403 2.406-6.34 2.406-8.744 0-2.403-2.404-2.403-6.343 0-8.747l5.113-5.118c.068-.067.154-.153.239-.221a6.191 6.191 0 0 1 6.426-1.142c.75.29 1.465.75 2.079 1.363l-2.642 2.645a2.446 2.446 0 0 0-3.46 0l-5.113 5.115a2.447 2.447 0 1 0 3.46 3.463l2.352-2.355c2.011.803 2.557.87 4.908.325z"/></svg>
+					</a>
+					<a href="#">
+						<svg width="26" height="25" viewBox="0 0 26 25" class="projects__item-card-search"><path d="M17.417 7.847c.318.644.047 1.42-.607 1.734-.185.087-.381.13-.576.13-.487 0-.954-.267-1.182-.728a4.147 4.147 0 0 0-3.748-2.31c-.726 0-1.315-.579-1.315-1.296 0-.714.589-1.295 1.315-1.295 2.62 0 4.964 1.443 6.113 3.765zm8.04 16.325a1.647 1.647 0 0 1-1.164.474 1.65 1.65 0 0 1-1.163-.474L18.795 19.9a11.218 11.218 0 0 1-6.836 2.317C5.793 22.218.777 17.276.777 11.202S5.793.186 11.96.186 23.14 5.128 23.14 11.202c0 2.37-.77 4.562-2.068 6.361l4.383 4.318a1.602 1.602 0 0 1 0 2.29zM11.96 19.627c2.104 0 4.03-.756 5.521-2.003.46-.384.874-.819 1.243-1.288a8.288 8.288 0 0 0 1.786-5.134c0-4.645-3.836-8.424-8.55-8.424-4.715 0-8.551 3.78-8.551 8.424 0 4.645 3.836 8.424 8.55 8.425z"/></svg>
+					</a>
 				</li>
 				<li class="projects__item-card">
 					<img src="img/photo4.jpg" alt="pic4" height="237" class="projects__item-card-pic">
@@ -154,8 +171,12 @@
 						<h3 class="projects__item-card-title">Claritas Etiam Processus</h3>
 						<p class="projects__item-card-text">Photography, Nature</p>
 					</div>
-					<a href="#" class="projects__item-card-link"></a>
-					<a href="#" class="projects__item-card-search"></a>
+					<a href="#">
+						<svg width="26" height="26" viewBox="0 0 26 26" class="projects__item-card-link"><path d="M23.5 11.242l-1.927 1.928-3.187 3.189c-.153.17-.34.324-.511.46a6.24 6.24 0 0 1-6.153.905 6.038 6.038 0 0 1-2.08-1.365l2.642-2.644a2.446 2.446 0 0 0 3.46 0l2.028-2.029L20.857 8.6a2.447 2.447 0 1 0-3.46-3.462l-2.454 2.456a7.068 7.068 0 0 0-4.908-.376l4.72-4.723c2.404-2.405 6.341-2.405 8.744 0 2.42 2.42 2.42 6.343 0 8.748zm-7.654 7.607l-4.618 4.672c-2.403 2.406-6.34 2.406-8.744 0-2.403-2.404-2.403-6.343 0-8.747l5.113-5.118c.068-.067.154-.153.239-.221a6.191 6.191 0 0 1 6.426-1.142c.75.29 1.465.75 2.079 1.363l-2.642 2.645a2.446 2.446 0 0 0-3.46 0l-5.113 5.115a2.447 2.447 0 1 0 3.46 3.463l2.352-2.355c2.011.803 2.557.87 4.908.325z"/></svg>
+					</a>
+					<a href="#">
+						<svg width="26" height="25" viewBox="0 0 26 25" class="projects__item-card-search"><path d="M17.417 7.847c.318.644.047 1.42-.607 1.734-.185.087-.381.13-.576.13-.487 0-.954-.267-1.182-.728a4.147 4.147 0 0 0-3.748-2.31c-.726 0-1.315-.579-1.315-1.296 0-.714.589-1.295 1.315-1.295 2.62 0 4.964 1.443 6.113 3.765zm8.04 16.325a1.647 1.647 0 0 1-1.164.474 1.65 1.65 0 0 1-1.163-.474L18.795 19.9a11.218 11.218 0 0 1-6.836 2.317C5.793 22.218.777 17.276.777 11.202S5.793.186 11.96.186 23.14 5.128 23.14 11.202c0 2.37-.77 4.562-2.068 6.361l4.383 4.318a1.602 1.602 0 0 1 0 2.29zM11.96 19.627c2.104 0 4.03-.756 5.521-2.003.46-.384.874-.819 1.243-1.288a8.288 8.288 0 0 0 1.786-5.134c0-4.645-3.836-8.424-8.55-8.424-4.715 0-8.551 3.78-8.551 8.424 0 4.645 3.836 8.424 8.55 8.425z"/></svg>
+					</a>
 				</li>
 				<li class="projects__item-card">
 					<img src="img/photo5.jpg" alt="pic5" height="237" class="projects__item-card-pic">
@@ -163,8 +184,12 @@
 						<h3 class="projects__item-card-title">Quam Nutamus Farum</h3>
 						<p class="projects__item-card-text">Graphic Design, Mock-Up</p>
 					</div>
-					<a href="#" class="projects__item-card-link"></a>
-					<a href="#" class="projects__item-card-search"></a>
+					<a href="#">
+						<svg width="26" height="26" viewBox="0 0 26 26" class="projects__item-card-link"><path d="M23.5 11.242l-1.927 1.928-3.187 3.189c-.153.17-.34.324-.511.46a6.24 6.24 0 0 1-6.153.905 6.038 6.038 0 0 1-2.08-1.365l2.642-2.644a2.446 2.446 0 0 0 3.46 0l2.028-2.029L20.857 8.6a2.447 2.447 0 1 0-3.46-3.462l-2.454 2.456a7.068 7.068 0 0 0-4.908-.376l4.72-4.723c2.404-2.405 6.341-2.405 8.744 0 2.42 2.42 2.42 6.343 0 8.748zm-7.654 7.607l-4.618 4.672c-2.403 2.406-6.34 2.406-8.744 0-2.403-2.404-2.403-6.343 0-8.747l5.113-5.118c.068-.067.154-.153.239-.221a6.191 6.191 0 0 1 6.426-1.142c.75.29 1.465.75 2.079 1.363l-2.642 2.645a2.446 2.446 0 0 0-3.46 0l-5.113 5.115a2.447 2.447 0 1 0 3.46 3.463l2.352-2.355c2.011.803 2.557.87 4.908.325z"/></svg>
+					</a>
+					<a href="#">
+						<svg width="26" height="25" viewBox="0 0 26 25" class="projects__item-card-search"><path d="M17.417 7.847c.318.644.047 1.42-.607 1.734-.185.087-.381.13-.576.13-.487 0-.954-.267-1.182-.728a4.147 4.147 0 0 0-3.748-2.31c-.726 0-1.315-.579-1.315-1.296 0-.714.589-1.295 1.315-1.295 2.62 0 4.964 1.443 6.113 3.765zm8.04 16.325a1.647 1.647 0 0 1-1.164.474 1.65 1.65 0 0 1-1.163-.474L18.795 19.9a11.218 11.218 0 0 1-6.836 2.317C5.793 22.218.777 17.276.777 11.202S5.793.186 11.96.186 23.14 5.128 23.14 11.202c0 2.37-.77 4.562-2.068 6.361l4.383 4.318a1.602 1.602 0 0 1 0 2.29zM11.96 19.627c2.104 0 4.03-.756 5.521-2.003.46-.384.874-.819 1.243-1.288a8.288 8.288 0 0 0 1.786-5.134c0-4.645-3.836-8.424-8.55-8.424-4.715 0-8.551 3.78-8.551 8.424 0 4.645 3.836 8.424 8.55 8.425z"/></svg>
+					</a>
 				</li>
 				<li class="projects__item-card">
 					<img src="img/photo6.jpg" alt="pic6" height="237" class="projects__item-card-pic">
@@ -172,8 +197,12 @@
 						<h3 class="projects__item-card-title">Usus Legentis Videntur</h3>
 						<p class="projects__item-card-text">Photography, Holiday</p>
 					</div>
-					<a href="#" class="projects__item-card-link"></a>
-					<a href="#" class="projects__item-card-search"></a>
+					<a href="#">
+						<svg width="26" height="26" viewBox="0 0 26 26" class="projects__item-card-link"><path d="M23.5 11.242l-1.927 1.928-3.187 3.189c-.153.17-.34.324-.511.46a6.24 6.24 0 0 1-6.153.905 6.038 6.038 0 0 1-2.08-1.365l2.642-2.644a2.446 2.446 0 0 0 3.46 0l2.028-2.029L20.857 8.6a2.447 2.447 0 1 0-3.46-3.462l-2.454 2.456a7.068 7.068 0 0 0-4.908-.376l4.72-4.723c2.404-2.405 6.341-2.405 8.744 0 2.42 2.42 2.42 6.343 0 8.748zm-7.654 7.607l-4.618 4.672c-2.403 2.406-6.34 2.406-8.744 0-2.403-2.404-2.403-6.343 0-8.747l5.113-5.118c.068-.067.154-.153.239-.221a6.191 6.191 0 0 1 6.426-1.142c.75.29 1.465.75 2.079 1.363l-2.642 2.645a2.446 2.446 0 0 0-3.46 0l-5.113 5.115a2.447 2.447 0 1 0 3.46 3.463l2.352-2.355c2.011.803 2.557.87 4.908.325z"/></svg>
+					</a>
+					<a href="#">
+						<svg width="26" height="25" viewBox="0 0 26 25" class="projects__item-card-search"><path d="M17.417 7.847c.318.644.047 1.42-.607 1.734-.185.087-.381.13-.576.13-.487 0-.954-.267-1.182-.728a4.147 4.147 0 0 0-3.748-2.31c-.726 0-1.315-.579-1.315-1.296 0-.714.589-1.295 1.315-1.295 2.62 0 4.964 1.443 6.113 3.765zm8.04 16.325a1.647 1.647 0 0 1-1.164.474 1.65 1.65 0 0 1-1.163-.474L18.795 19.9a11.218 11.218 0 0 1-6.836 2.317C5.793 22.218.777 17.276.777 11.202S5.793.186 11.96.186 23.14 5.128 23.14 11.202c0 2.37-.77 4.562-2.068 6.361l4.383 4.318a1.602 1.602 0 0 1 0 2.29zM11.96 19.627c2.104 0 4.03-.756 5.521-2.003.46-.384.874-.819 1.243-1.288a8.288 8.288 0 0 0 1.786-5.134c0-4.645-3.836-8.424-8.55-8.424-4.715 0-8.551 3.78-8.551 8.424 0 4.645 3.836 8.424 8.55 8.425z"/></svg>
+					</a>
 				</li>
 			</ul>
 			<!--<a href="#" class="projects__link">Load More</a>-->
@@ -249,6 +278,10 @@
 						<p class="posts__item-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 						<a href="#" class="posts__item-link">Read More</a>
 					</div>
+					<div class="posts__item-date">
+						<span class="posts__item-date-number">30</span>
+						<span class="posts__item-date-month">Sept.</span>
+					</div>
 				</li>
 				<li class="posts__item">
 					<img src="img/recent_photo2.jpg" alt="recent_photo2" height="220" class="posts__item-pic">
@@ -257,6 +290,10 @@
 						<p class="posts__item-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 						<a href="#" class="posts__item-link">Read More</a>
 					</div>
+					<div class="posts__item-date">
+						<span class="posts__item-date-number">30</span>
+						<span class="posts__item-date-month">Sept.</span>
+					</div>
 				</li>
 				<li class="posts__item">
 					<img src="img/recent_photo3.jpg" alt="recent_photo3" height="220" class="posts__item-pic">
@@ -264,6 +301,10 @@
 						<h3 class="posts__item-title">Lorem ipsum dolor sit amet</h3>
 						<p class="posts__item-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 						<a href="#" class="posts__item-link">Read More</a>
+					</div>
+					<div class="posts__item-date">
+						<span class="posts__item-date-number">30</span>
+						<span class="posts__item-date-month">Sept.</span>
 					</div>
 				</li>
 			</ul>
@@ -277,9 +318,10 @@
 			</div>
 		</section>
 		<section class="partners">
+			<h2 class="visually-hidden">Partners</h2>
 			<ul class="partners__list">
 				<li class="partners__item">
-					<a href="#"><img src="img/logo_barber.png" alt="logo_barber"></a>
+					<a href="#"><img src="img/logo_barber.png" alt="logo_barber" class="partners__item-pic"></a>
 				</li>
 				<li class="partners__item">
 					<a href="#"><img src="img/logo_delicious.png" alt="logo_delicious"></a>
@@ -338,7 +380,7 @@
 						<p class="footer__twitter-time">5 hours ago</p>
 					</li>
 					<li class="footer__twitter-item">
-						<p class="footer__twitter-text">Soluta nobis option <a href="#" class="footer__twitter-link">bit.ly/1Hniso7</a></p>
+						<p class="footer__twitter-text">Soluta nobis option <a href="#" class="footer__twitter-link2">bit.ly/1Hniso7</a></p>
 						<p class="footer__twitter-time">20 days ago</p>
 					</li>
 				</ul>
@@ -363,14 +405,14 @@
 		</div>
 		<nav class="footer__link">
 			<ul class="footer__link-list">
-				<li><a href="#" class="footer__link-text">Copyright © 2015 <span class="footer__link-link">Waxom</span></a></li>
-				<li><a href="#" class="footer__link-text">Privacy Policy</a></li>
-				<li><a href="#" class="footer__link-text">FAQ</a></li>
-				<li><a href="#" class="footer__link-text">Support</a></li>
+				<li class="pretext pretext__padding">Copyright © 2015<a href="#" class="footer__link-text footer__link-link">Waxom</a></li>
+				<li class="pretext__padding"><a href="#" class="footer__link-text">Privacy Policy</a></li>
+				<li class="pretext__padding"><a href="#" class="footer__link-text">FAQ</a></li>
+				<li class="pretext__padding"><a href="#" class="footer__link-text">Support</a></li>
 			</ul>
 			<ul class="footer__link-list">
-				<li><p class="footer__link-text pretext">Designed by <a href="#" class="footer__link-text">ThemeFire</a></p></li>
-				<li><p class="footer__link-text pretext">Only on <a href="#" class="footer__link-text">Envato Market</a></p></li>
+				<li><p class="pretext pretext__padding">Designed by <a href="#" class="footer__link-text footer__link-link">ThemeFire</a></p></li>
+				<li><p class="pretext pretext__padding">Only on <a href="#" class="footer__link-text footer__link-link">Envato Market</a></p></li>
 			</ul>
 		</nav>
 	</footer>
