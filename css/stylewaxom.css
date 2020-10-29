@@ -110,9 +110,9 @@ label,
 	display: none;
 }
 
-input[type="checkbox"]:checked ~ .menu__list {
+/*input[type="checkbox"]:checked ~ .menu__list {
 	visibility: visible;
-}
+}*/
 
 .menu__list, 
 .menu2__list {
@@ -122,7 +122,7 @@ input[type="checkbox"]:checked ~ .menu__list {
 	justify-content: space-between;
 	align-content: center;
 	height: 60px;
-	/*padding: 0;*/
+	margin: 0;
 	flex-wrap: wrap;
 }
 
@@ -132,10 +132,6 @@ input[type="checkbox"]:checked ~ .menu__list {
 	display: flex;
 	align-items: center;
 }
-
-/*.menu__list-item:nth-child(9) {
-	padding-left: 60px;
-}*/
 
 .menu__list-link,
 .menu2__list-link {
@@ -1406,14 +1402,14 @@ input[type="checkbox"]:checked ~ .menu__list {
 @media only screen and (max-device-width: 480px) {
 
 	.header {
-		/*min-height: 300px;*/
+		min-height: auto;
 		/*background-image: url(../img/photo_bg.jpg);
 		background-color: #474540;
 		background-size: 10%;
 		background-position: center center;
 		background-repeat: no-repeat;*/
 
-		padding: 40px 40px;
+		/*padding: 40px 40px;*/
 	}
 
 	.carusel {
@@ -1421,8 +1417,20 @@ input[type="checkbox"]:checked ~ .menu__list {
 	}
 
 	.logo__link {
-		display: none;
+		/*display: none;*/
 		/*width: 80%;*/
+	}
+
+	.navigation {
+		display: block;
+	}
+
+	.mobile__menu-block {
+		display: flex;
+	    width: 100%;
+	    flex-direction: row;
+	    justify-content: space-around;
+	    align-items: center; /*центрирование элементов по вертикали*/
 	}
 
 	label {
@@ -1437,7 +1445,7 @@ input[type="checkbox"]:checked ~ .menu__list {
 	.menu__list {
 		visibility: hidden;
     	margin: 0 auto;
-    	height: auto;
+    	height: 0;
     	width: 100%;
     	flex-direction: column;
 
@@ -1452,7 +1460,17 @@ input[type="checkbox"]:checked ~ .menu__list {
 	.menu__list-item {
 		height: 50px;
 		text-align: center;
-		background-color: #ccc;
+		background-color: transparent;
+	}
+
+	.menu__list-link {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	input[type="checkbox"]:checked ~ .menu__list {
+		height: auto;
+		visibility: visible;
 	}
 
 	.services__list {
@@ -1490,7 +1508,7 @@ input[type="checkbox"]:checked ~ .menu__list {
    	}
 
    	.mobile-features-wrp {
-   		padding: 5% 0;
+   		padding: 0 0 5% 0;;
    	}
 
    	.posts__list {
@@ -1500,11 +1518,12 @@ input[type="checkbox"]:checked ~ .menu__list {
    	}
 
    	.posts {
-   		padding: 0;
+   		padding: 50px 0 0 0;
    	}
 
    	.posts__text {
-   		padding: 0 50px;
+   		font-size: 22px;
+   		padding: 20px 100px;
    	}
 
    	.posts__item {
